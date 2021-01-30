@@ -96,6 +96,7 @@ body{font-family:Montserrat, Helvetica, Arial, sans-serif;font-weight:400;}
   color: #f00;
   font-weight: 600;
   margin-right: 2rem;
+	font-size: 17px;
 }
 
 .heading-links a{
@@ -116,7 +117,11 @@ body{font-family:Montserrat, Helvetica, Arial, sans-serif;font-weight:400;}
   font-weight: 800;
 }
 .step-tittle>span{
-  font-weight: 600;
+	font-weight: 600;
+  font-size: 18px;
+}
+.step-tittle ul li span{
+	font-size: 16px;
 }
 .software-list{
   list-style: lower-alpha;
@@ -129,10 +134,45 @@ body{font-family:Montserrat, Helvetica, Arial, sans-serif;font-weight:400;}
   text-decoration: underline;
 }
 
+.circle {
+	position: relative;
+    border: 2px solid #02075d;
+    border-radius: 100%;
+		width: 64px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #fff;
+    z-index: 2;
+    color: #02075d;
+		font-weight: 700;
+}
+.circle:first-child {margin-top: 0;}
+.circle:before {
+	position: absolute;
+	 border: 1px solid #02075d;
+		width: 0;
+		height: 52px;
+		 display: block;
+		 content: '';
+		 left: 50%;
+		 z-index: 1;
+		 top: -54px;
+		 margin-left: -1px;
+		}
+.circle:first-child:before {display: none;}
+.step2{
+	margin-top: 6rem !important;
+}
+.step3{
+	margin-top: 4rem;
+}
+
 /*===================== contact section ==============*/
 .contact-heading{
   color: #f00 !important;
   font-weight: 800;
+	margin-top: 9rem;
 }
 .contact-subheading{
   font-weight: 600;
@@ -309,7 +349,7 @@ body{font-family:Montserrat, Helvetica, Arial, sans-serif;font-weight:400;}
 	<div class="main-content pb-5">
 
   <!--======================= heading =======================================-->
-<div class="container">
+<div class="container pb-3">
     <h1 class="page-heading text-center mt-5">CloudFish Cybersecurity Platform</h1>
     <h3 class="page-heading text-center mt-3">Free Trial</h3>
 
@@ -324,51 +364,49 @@ body{font-family:Montserrat, Helvetica, Arial, sans-serif;font-weight:400;}
   </div>
 
   <!--======================= installation section ===========================-->
-  <div class="container">
-    <h5 class="install-tittle mt-5 mb-4">HOW TO INSTALL CLOUDFISH ?</h5>
 
-    <div class="row mb-3">
-     <div class="col-sm"><img src="imgs/rocket.svg" class="install-img"></div>
-     <div class="col-sm step"><span>Step 1:</span></div>
-     <div class="col-10 step-tittle">
-       <span>Download the setup files</span>
-        <ul class="install-list mt-2">
-        <li><span>Click <a href="https://vimeo.com/505943480" target="_blank" class="link-video">here</a> to download the file on your Windows PC</span></li>
-        </ul>
-     </div>
-   </div>
+	<div class="container">
+		<h4 class="install-tittle mt-5 mb-4">HOW TO INSTALL CLOUDFISH ?</h4>
+		<div class="row">
+			<div class="col mt-3">
+				<div class="circle">Step 1</div>
+				<div class="circle">Step 2</div>
+				<div class="circle">Step 3</div>
+			</div>
+			<div class="col-11 mt-4">
 
-   <div class="row mb-3">
-    <div class="col-sm"><img src="imgs/graduation-cap.svg" class="install-img"></div>
-    <div class="col-sm step"><span>Step 2:</span></div>
-    <div class="col-10 step-tittle">
-      <span>Install the software</span>
-      <ul class="software-list mt-2">
-        <li><span>Install the CloudFish Filesecure application [ <a href="https://vimeo.com/505943480" target="_blank" class="link-video">Watch Video</a> ]</span></li>
-        <li><span>Install the CloudFish InGenious/Enterprise 360 platform [ <a href="http://howtoinstallingeniouse360.mycloudfish.com" target="_blank" class="link-video">Watch Video</a> ]</span></li>
-      </ul>
-    </div>
-  </div>
+				<div class=" step-tittle">
+	        <span>Download the setup files</span>
+	         <ul class="install-list mt-2">
+	         <li><span>Click <a href="https://vimeo.com/505943480" target="_blank" class="link-video">here</a> to download the file on your Windows PC</span></li>
+	         </ul>
+	      </div>
 
-  <div class="row">
-   <div class="col-sm"><img src="imgs/megaphone.svg" class="install-img"></div>
-   <div class="col-sm step"><span>Step 3:</span></div>
-   <div class="col-10 step-tittle">
-     <span>Learn about CloudFish Security Platform</span>
-     <ul class="install-list mt-2">
-       <li><span>How CloudFish protects your documents and files [ <a href="http://filesecuredemo.mycloudfish.com" target="_blank" class="link-video">Watch Demo</a> ]</span></li>
-       <li><span>How CloudFish protects you from cyber-attacks [ <a href="http://filesecuredemo.mycloudfish.com" target="_blank" class="link-video">Watch Demo</a> ]</span></li>
-       <li><span>How does  CloudFish virtual SOC protects your enterprise [ <a href="http://ingeniousdemo.mycloudfish.com" target="_blank" class="link-video">Watch Demo</a> ]</span></li>
-     </ul>
-   </div>
-  </div>
+				<div class="step-tittle step2">
+		      <span>Install the software</span>
+		      <ul class="software-list mt-2">
+		        <li><span>Install the CloudFish Filesecure application [ <a href="https://vimeo.com/505943480" target="_blank" class="link-video">Watch Video</a> ]</span></li>
+		        <li><span>Install the CloudFish InGenious/Enterprise 360 platform [ <a href="http://howtoinstallingeniouse360.mycloudfish.com" target="_blank" class="link-video">Watch Video</a> ]</span></li>
+		      </ul>
+		    </div>
 
-  </div>
+				<div class="step-tittle step3">
+		      <span>Learn about CloudFish Security Platform</span>
+		      <ul class="install-list mt-2">
+		        <li><span>How CloudFish protects your documents and files [ <a href="http://filesecuredemo.mycloudfish.com" target="_blank" class="link-video">Watch Demo</a> ]</span></li>
+		        <li><span>How CloudFish protects you from cyber-attacks [ <a href="http://filesecuredemo.mycloudfish.com" target="_blank" class="link-video">Watch Demo</a> ]</span></li>
+		        <li><span>How does  CloudFish virtual SOC protects your enterprise [ <a href="http://ingeniousdemo.mycloudfish.com" target="_blank" class="link-video">Watch Demo</a> ]</span></li>
+		      </ul>
+		    </div>
+
+			</div>
+		</div>
+	</div>
 
 
   <!--======================= contact section ===========================-->
   <div class="container pb-5">
-    <h5 class="contact-heading text-center mt-5 mb-5">24x7 POC SUPPORT</h5>
+    <h5 class="contact-heading text-center mb-5">24x7 POC SUPPORT</h5>
     <div class="row">
       <div class="col-lg">
         <h5 class="text-center contact-subheading">Email Us</h5>
